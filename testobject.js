@@ -11,9 +11,6 @@ const dragonFactory = (skincolor, elemental ,type) => {
 }
 
 const redDragon = dragonFactory('Red', 'Fire', 'Chinese');
-console.log(redDragon);
-redDragon.roar();
-
-for(let dragon in redDragon){
-    console.log(`${dragon}: ${redDragon[dragon].name}`)
-}
+for (let key in redDragon) {
+    console.log(`${key}: ${redDragon[key]}`);
+  }
